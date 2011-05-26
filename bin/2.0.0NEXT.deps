@@ -11,3 +11,6 @@ metadata origin/HEAD
 FrameworkExtraBundle origin/HEAD
 SecurityExtraBundle origin/HEAD
 WebConfiguratorBundle origin/HEAD
+FOSUserBundle origin/HEAD
+FOSCommentBundle origin/HEAD
+FOSRestBundle origin/HEAD
