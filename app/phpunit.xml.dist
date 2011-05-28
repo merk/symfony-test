@@ -16,6 +16,10 @@
             <directory>../src/*/*Bundle/Tests</directory>
             <directory>../src/*/Bundle/*Bundle/Tests</directory>
         </testsuite>
+
+        <testsuite name="FOS">
+            <directory>../vendor/bundles/FOS/*/Tests</directory>
+        </testsuite>
     </testsuites>
 
     <!--
@@ -27,11 +31,14 @@
     <filter>
         <whitelist>
             <directory>../src</directory>
+            <directory>../vendor/bundles/FOS</directory>
             <exclude>
                 <directory>../src/*/*Bundle/Resources</directory>
                 <directory>../src/*/*Bundle/Tests</directory>
                 <directory>../src/*/Bundle/*Bundle/Resources</directory>
                 <directory>../src/*/Bundle/*Bundle/Tests</directory>
+                <directory>../vendor/bundles/FOS/*/Resources</directory>
+                <directory>../vendor/bundles/FOS/*/Tests</directory>
             </exclude>
         </whitelist>
     </filter>
