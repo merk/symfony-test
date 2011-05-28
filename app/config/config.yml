@@ -67,3 +67,5 @@ fos_comment:
     class:
         model:
             comment: Test\AppBundle\Entity\Comment
+
+fos_rest: ~
