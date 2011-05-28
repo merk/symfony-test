@@ -10,6 +10,6 @@
 /                       metadata              http://github.com/schmittjoh/metadata.git
 /bundles/Sensio/Bundle  FrameworkExtraBundle  http://github.com/sensio/SensioFrameworkExtraBundle.git
 /bundles/JMS            SecurityExtraBundle   http://github.com/schmittjoh/SecurityExtraBundle.git
-/bundles/FOS/Bundle     FOSUserBundle         http://github.com/FriendsOfSymfony/UserBundle.git
-/bundles/FOS/Bundle     FOSCommentBundle      http://github.com/FriendsOfSymfony/CommentBundle.git
-/bundles/FOS/Bundle     FOSRestBundle         http://github.com/FriendsOfSymfony/RestBundle.git
+/bundles/FOS            UserBundle            http://github.com/FriendsOfSymfony/UserBundle.git
+/bundles/FOS            CommentBundle         http://github.com/FriendsOfSymfony/CommentBundle.git
+/bundles/FOS            RestBundle            http://github.com/FriendsOfSymfony/RestBundle.git
