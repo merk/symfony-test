@@ -58,9 +58,7 @@ jms_security_extra:
 fos_user:
     db_driver: orm
     firewall_name: main
-    class:
-        model:
-            user: Test\AppBundle\Entity\User
+    user_class: Test\AppBundle\Entity\User
 
 fos_comment:
     db_driver: orm
