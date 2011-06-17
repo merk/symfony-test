@@ -1,0 +1,6 @@
+rest_test:
+  type: rest
+  prefix: /test
+  resource:
+    - @TestVersionBundle\Controller\v1_0\UserController
+    - @TestVersionBundle\Controller\v1_1\UserController
