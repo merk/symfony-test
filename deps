@@ -37,10 +37,6 @@
     git=http://github.com/schmittjoh/SecurityExtraBundle.git
     target=/bundles/JMS/SecurityExtraBundle
 
-[SensioDistributionBundle]
-    git=http://github.com/sensio/SensioDistributionBundle.git
-    target=/bundles/Sensio/Bundle/DistributionBundle
-
 [SensioGeneratorBundle]
     git=http://github.com/sensio/SensioGeneratorBundle.git
     target=/bundles/Sensio/Bundle/GeneratorBundle
