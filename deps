@@ -47,13 +47,13 @@
     target=/bundles/Symfony/Bundle/AsseticBundle
 
 [FOSUserBundle]
-    git=http://github.com/FriendsOfSymfony/UserBundle.git
+    git=http://github.com/FriendsOfSymfony/FOSUserBundle.git
     target=/bundles/FOS/UserBundle
 
 [FOSRestBundle]
-    git=http://github.com/FriendsOfSymfony/RestBundle.git
+    git=http://github.com/FriendsOfSymfony/FOSRestBundle.git
     target=/bundles/FOS/RestBundle
 
 [FOSCommentBundle]
-    git=http://github.com/FriendsOfSymfony/CommentBundle.git
+    git=http://github.com/FriendsOfSymfony/FOSCommentBundle.git
     target=/bundles/FOS/CommentBundle
