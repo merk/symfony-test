@@ -4,3 +4,8 @@ rest_test:
   resource:
     - @TestVersionBundle\Controller\v1_0\UserController
     - @TestVersionBundle\Controller\v1_1\UserController
+
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
