@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\VersionBundle\Controller\v1_0;
+namespace Test\VersionBundle\Controller\v1_1;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 

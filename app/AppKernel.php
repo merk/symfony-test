@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new FOS\RestBundle\FOSRestBundle(),
             new Test\AppBundle\TestAppBundle(),
             new Test\VersionBundle\TestVersionBundle(),
+            new merk\NotificationBundle\merkNotificationBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
