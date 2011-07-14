@@ -57,3 +57,11 @@
 [FOSCommentBundle]
     git=http://github.com/FriendsOfSymfony/FOSCommentBundle.git
     target=/bundles/FOS/CommentBundle
+
+[merkNotificationBundle]
+    git=http://github.com/merk/merkNotificationBundle.git
+    target=/bundles/merk/NotificationBundle
+
+[OrnicarAkismetBundle]
+    git=http://github.com/ornicar/OrnicarAkismetBundle.git
+    target=/bundles/Ornicar/AkismetBundle
