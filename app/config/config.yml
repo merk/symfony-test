@@ -11,6 +11,7 @@ framework:
     csrf_protection: true
     validation:      { enable_annotations: true }
     templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
+    translator:      { fallback: en }
     session:
         default_locale: %locale%
         auto_start:     true
@@ -65,7 +66,8 @@ fos_comment:
     db_driver: orm
     class:
         model:
-            comment: Test\AppBundle\Entity\Comment
+            comment: Test\CommentBundle\Entity\Comment
+            thread: Test\CommentBundle\Entity\Thread
 
 fos_rest: ~
 
@@ -73,5 +75,6 @@ merk_notification:
     db_driver: orm
     class:
         model:
-            notification: Test\AppBundle\Entity\Notification
+            action: Test\AppBundle\Entity\Action
+            user_preferences: Test\AppBundle\Entity\UserPreferences
 

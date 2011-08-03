@@ -1,0 +1,18 @@
+{% extends "TestAppBundle::layout.html.twig" %}
+
+{% block title %}flat comment test{% endblock %}
+
+{% block header %}
+{% stylesheets '@FOSCommentBundle/Resources/assets/css/comments.css' %}
+<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+{% endstylesheets %}
+{% endblock %}
+
+{% block content %}
+{% render "FOSCommentBundle:Thread:showFlat" with { 'identifier': 'test' } %}
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+{% javascripts '@FOSCommentBundle/Resources/assets/js/comments.js' %}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock %}

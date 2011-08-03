@@ -3,8 +3,20 @@
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #   prefix:   /_internal
 
-app:
+TestCommentBundle:
+    resource: "@TestCommentBundle/Resources/config/routing.yml"
+    prefix:   /comment
+
+TestAppBundle:
     resource: "@TestAppBundle/Resources/config/routing.yml"
+
+merk_notification_user_preferences:
+    resource: "@merkNotificationBundle/Resources/config/routing/user_preferences.xml"
+    prefix: /notifications
+
+FOSCommentBundle:
+    resource: "@FOSCommentBundle/Resources/config/routing.yml"
+    prefix:   /comment
 
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
@@ -25,9 +37,9 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /change-password
 
-rest_test:
-  type: rest
-  prefix: /test
-  resource:
-    - @TestVersionBundle\Controller\v1_0\UserController
-    - @TestVersionBundle\Controller\v1_1\UserController
+#rest_test:
+#  type: rest
+#  prefix: /test
+#  resource:
+#    - @TestVersionBundle\Controller\v1_0\UserController
+#    - @TestVersionBundle\Controller\v1_1\UserController

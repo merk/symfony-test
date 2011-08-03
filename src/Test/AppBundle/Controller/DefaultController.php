@@ -8,10 +8,17 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
+        $user = $this->container->get('security.context')->getToken()->getUser();
+        $am = $this->container->get('merk_notification.manager.action');
+        $action = $am->createAction($user);
+        $action->setMessage('tim did something');
+        $action->setRouteName('hello');
+        $action->setRouteParams(array());
+        $am->addAction($action);
 
-        $nm = $this->container->get('merk_notification.manager.notification');
+        var_dump($action);
 
-        $nm->createNotification();
+        die;
 
 
         return $this->render('TestAppBundle:Default:index.html.twig');

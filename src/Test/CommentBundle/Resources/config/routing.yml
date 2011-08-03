@@ -1,0 +1,7 @@
+commenthome:
+    pattern:  /
+    defaults: { _controller: TestCommentBundle:Default:index }
+
+commentflag:
+    pattern: /flat
+    defaults: { _controller: TestCommentBundle:Default:flat }

@@ -23,12 +23,13 @@ class AppKernel extends Kernel
             new Test\AppBundle\TestAppBundle(),
             new Test\VersionBundle\TestVersionBundle(),
             new merk\NotificationBundle\merkNotificationBundle(),
+            new Symfony\Bundle\DoctrineMigrationsBundle\DoctrineMigrationsBundle(),
+            new Test\CommentBundle\TestCommentBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
-
         }
 
         return $bundles;

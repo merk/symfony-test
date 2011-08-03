@@ -2,15 +2,15 @@
 
 namespace Test\AppBundle\Entity;
 
-use merk\NotificationBundle\Entity\Notification as BaseNotification;
+use merk\NotificationBundle\Entity\UserPreferences as BasePreferences;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="test_notification")
+ * @ORM\Table(name="test_notification_userprefs")
  * @author Tim Nagel <tim@nagel.com.au>
  */
-class Notification extends BaseNotification
+class UserPreferences extends BasePreferences
 {
     /**
      * Comment id.
@@ -22,7 +22,7 @@ class Notification extends BaseNotification
     protected $id;
 
     /**
-     * The user this notification belongs to.
+     * The user this preference object belongs to.
      *
      * @var User
      * @ORM\ManyToOne(targetEntity="User")
